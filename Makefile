@@ -9,6 +9,11 @@ screengrab: screengrab.o
 	$(CC) -o $@ $^ $(LDFLAGS)
 	./$@
 
+watch:
+	echo *.cpp | entr make
+
 clean:
 	rm -rfv *.o screengrab
+
+.PHONY: clean watch
 

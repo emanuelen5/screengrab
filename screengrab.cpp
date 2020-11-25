@@ -14,7 +14,7 @@ int main(void) {
 
 
     XEvent event;
-    char *msg = "Hello, World!";
+    char *msg = (char*) "Hello, World!";
 	int s;
 
 	Display* display = XOpenDisplay(nullptr);
